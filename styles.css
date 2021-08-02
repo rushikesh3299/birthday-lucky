@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+
+#app{
+  text-align: center;
+}
+
+.back-img{
+  display: block;
+  width: 101vh;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.welcome-msg{
+  padding-bottom: 1rem;
+  background-color: wheat;
+}
+
+.top-container{
+  width: 60%;
+  margin: auto auto;
+}
+
+.bottom-container{
+  background-color: aqua;
+  width: 60%;
+  margin: auto auto;
+}
+
+#privacy-policy{
+  color: red;
+}
+
+#privacy-policy p{
+  display: inline;
+  padding-right: 1rem;
+}
+
+#privacy-policy button{
+  background-color: aqua;
+  color: red;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.main h2, .main h3{
+  padding: 1rem;
+}
+
+.main input{
+  width: 30%;
+  height: 2rem;
+}
+
+button{
+  margin: 1rem;
+  padding: .5rem;
+  background-color: wheat;
+  border-style: none;
+}
+
+.result img, .result p{
+  padding: 1rem;
+}
+
+.false-result, .true-result{
+  display: none;
+}
+
+.footer{
+  padding: 1rem;
+  background-color: wheat;
+}
+
+.footer-icon .fa{
+  text-decoration: none;
+  padding: 1rem;
+  padding-top: 0;
+  font-size: 2rem;
+}
+
+.footer-info a{
+  padding: 1rem;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-container{
+    width: 100%;
+  }
+  .bottom-container{
+    width: 100%;
+  }
+
+}
