@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirthdayLucky</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+
+  <body>
+    
+    <div id="app">
+      <div class="top-container">
+        <img class="back-img" src="bg.svg" />
+        <div class="welcome-msg">
+          <h1>Is your Birthday Lucky</h1>
+          <a href="#main" >Know here</a>
+        </div>
+      </div>
+      
+      <div class="bottom-container">
+        <div id="privacy-policy">
+          <p>Privacy Note: We are not storing your data</p>
+          <button onclick="closePolicy()">&times;</button>
+        </div>
+  
+        <div id="main" class="main">
+          <h2>Enter Your Birthday & lucky number to continue...</h2>
+          <div class="birth-date">
+            <h3>Birth date</h3>
+            <input type="date" name="" id="birth-date" /><br />
+          </div>
+          <div class="lucky-no">
+            <h3>Lucky Number</h3>
+            <input type="number" id="lucky-no" /><br />
+          <button class="check-btn" onclick="check()">Check</button>
+          </div>
+        </div>
+  
+        <div class="result">
+          <div class="false-result">
+            <img src="false.svg" width="250px" />
+            <p> Oops!!Your birthday is not a lucky number!</p>
+          </div>
+          <div class="true-result">
+            <img src="true.svg" width="250px" />
+            <p>Hurray!!You are a lucky person!</p>
+          </div>
+        </div>
+  
+        <div class="footer">
+          <div class="footer-icon">
+            <a href="https://twitter.com/rushikesh3299" class="fa fa-twitter"></a>
+            <a href="https://github.com/rushikesh3299" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/rushikesh-chougule-621854192/" class="fa fa-linkedin"></a>
+          </div>
+          <div class="footer-info">
+            <a href="#">Made with ❤ by Rushikesh</a>
+            <a href="#privacy-policy" onclick="showPolicy()">PrivacyPolicy</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
